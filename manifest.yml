@@ -1,0 +1,8 @@
+applications:
+- disk_quota: 1024M
+  host: javascriptdrdahelloworld
+  name: javascriptdrdahelloworld
+  path: .
+  domain: stage1.mybluemix.net
+  instances: 1
+  memory: 256M

@@ -1,0 +1,15 @@
+*~
+*.swo
+*.swp
+*.metadata
+*.recommenders
+*.class
+*.jar
+*.xml
+*.war
+taskArtifacts/
+.settings/
+node_modules/
+build/
+*.classpath
+*.log

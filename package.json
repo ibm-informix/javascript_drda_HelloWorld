@@ -1,0 +1,14 @@
+{
+  "name": "javascriptdrdahelloworld",
+  "version": "0.1.0",
+  "description": "Node_DRDA",
+   "scripts": {
+		"start": "node javascript_drda_HelloWorld.js"
+	},
+	"dependencies": {
+      "express": "4.12.x",
+      "ibm_db" : "~0.0.9",
+      "ejs":"~2.3.3"
+  },
+  "repository": {}
+}
