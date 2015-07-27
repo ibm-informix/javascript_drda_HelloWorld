@@ -1,20 +1,51 @@
+#Javascript DRDA Hello World Sample Application
 
+##Where are the important files?
 
-# drdaNode
+###Relevant files:
 
+####javascript_mongo_HelloWorld.java
 
+This file contains all of the sample data interacting with the database.
 
-## Usage
+####manifest.yml
 
+If deploying to bluemix, this file gives details about the application.
 
+####package.json
 
-## Developing
+This file gathers dependencies.
 
+##What can I do with this example?
 
+###Option 1: Deploy to Bluemix
 
-### Tools
+####Requirements:
 
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+Git - Used to download the application.
 
-Nodeclipse is free open-source project that grows with your contributions.
+CloudFoundry CLI -  Used to push the application to Bluemix.
+
+####Procedure:
+
+ * Step 1: Clone repository to local machine
+	
+ * Step 2: Push application to Bluemix using CloudFoundry CLI.
+
+###Option 2: Run locally
+
+####Requirements:
+
+Git - Used to download the application.
+
+NPM -  Used to get dependencies.
+
+####Procedure:
+
+ * Step 1: Clone repository to local machine
+ 
+ * Step 2: Specify the connection information
+
+ * Step 3: Use NPM to copy dependencies
+
+ * Step 4: Deploy as a web application
