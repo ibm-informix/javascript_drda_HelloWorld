@@ -224,7 +224,7 @@ function doEverything(res){
 function parseVcap(){
 ////	 vcap parsing
 	var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
-	var credentials = vcap_services['altadb-dev'][0].credentials;
+	var credentials = vcap_services['timeseriesdatabase'][0].credentials;
 	var ssl = false;
 	var drdaport;
 	var database = credentials.db;
@@ -233,13 +233,17 @@ function parseVcap(){
 	var password = credentials.password;
 	
 	if (ssl){
-		drdaport = credentials.ssl_drda_port;
+		drdaport = credentials.drda_port_ssl;
 	}
 	else{
 	    drdaport = credentials.drda_port;  
 	}
       
 	url = "HOSTNAME=" + host + ";PORT=" + drdaport + ";DATABASE="+ database + ";PROTOCOL=TCPIP;UID=" + username +";PWD="+ password + ";";
+
+	if (ssl){
+		url += "Security=ssl";
+	}
 }
 
 app.get('/databasetest', function(req, res) {
