@@ -8,10 +8,6 @@
 
 This file contains all of the sample data interacting with the database.
 
-####manifest.yml
-
-If deploying to bluemix, this file gives details about the application.
-
 ####package.json
 
 This file gathers dependencies.
